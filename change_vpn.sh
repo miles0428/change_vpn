@@ -80,4 +80,4 @@ echo "VPN connected to $VPN_TO_CONNECT"
 IPV4=$(wget -qO- http://ipecho.net/plain)
 echo   "IPV4 address of the VPN :" $IPV4
 
-iptables -t nat -I POSTROUTING 1 -s 10.8.0.0/24 -o tun1 -j MASQUERADE
+# iptables -t nat -I POSTROUTING 1 -s 10.8.0.0/24 -o tun1 -j MASQUERADE
